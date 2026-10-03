@@ -1,0 +1,68 @@
+name: Bug report
+description: Something in Kora is broken or behaves wrongly.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. In Kora, **Help → Report a Bug…** opens this form with your version and Mac filled in.
+        Please don't paste API keys, tokens or private code: skim logs before you attach them.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+      placeholder: I opened a project, sent a message in Swarm mode, and…
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The shortest path to see it again, if you know one.
+      placeholder: |
+        1.
+        2.
+        3.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in Kora?
+      options:
+        - Chat
+        - Swarm / worker panes
+        - Code graph / indexing
+        - Settings
+        - Installing or updating
+        - Something else
+    validations:
+      required: true
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Which agent was involved?
+      multiple: true
+      options:
+        - Claude Code
+        - Codex
+        - OpenCode / Koragent (Swarm workers)
+        - None / not agent-related
+  - type: input
+    id: version
+    attributes:
+      label: Kora version
+      description: Settings → About (filled in when you report from the app).
+      placeholder: "0.2.0"
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Mac
+      description: macOS version and chip (filled in when you report from the app).
+      placeholder: macOS 26.0, arm64
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and screenshots
+      description: Help → Show Logs in Finder selects server.log, which you can drag in here, plus any screenshots or a short screen recording.

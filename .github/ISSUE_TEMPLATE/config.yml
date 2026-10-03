@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and help
+    url: https://github.com/agilkatakam/kora/discussions
+    about: How do I…? Setups, tips and anything that isn't a bug.
+  - name: Security vulnerability
+    url: https://github.com/agilkatakam/kora/security/advisories/new
+    about: Report it privately, please, not as a public issue.
