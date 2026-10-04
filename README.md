@@ -32,12 +32,8 @@
 1. [Download Kora](https://github.com/agilkatakam/kora/releases/latest/download/Kora-arm64.dmg) and open the disk
    image.
 2. Drag **Kora** onto **Applications**, then open it from Applications.
-3. Kora needs [Claude Code](https://claude.com/claude-code) installed and logged in. If Kora's first screen says it
-   is missing, run this in Terminal, then run `claude` once to log in:
-
-   ```bash
-   curl -fsSL https://claude.ai/install.sh | bash
-   ```
+3. On Kora's first screen, choose **Log in to Claude**. It signs you in through your browser with your Claude plan;
+   no Terminal needed. Then open a project folder and ask your first question.
 
 Kora is signed with an Apple Developer ID and notarized by Apple, so it opens like any other Mac app.
 
