@@ -2,7 +2,7 @@
 
 Last updated: 10 October 2026
 
-This agreement is between you and Koragraph ("we", "us") and covers the Kora application for Mac and its updates
+This agreement is between you and Akhil Katakam, trading as Kora ("we", "us") and covers the Kora application for Mac and its updates
 ("Kora"). By installing or using Kora you accept it. If you do not accept it, do not install or use Kora.
 
 ## 1. Licence
