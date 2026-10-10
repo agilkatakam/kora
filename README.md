@@ -24,6 +24,8 @@
   need, so they spend less time (and fewer tokens) searching.
 - **Swarm.** Claude leads; cheaper worker agents do the gathering, editing and checking in their own worktrees. Each
   worker runs in a live pane you can watch and steer.
+- **Kora blobs.** A second surface (Kora | Code switcher): persistent assistants with their own folder, memory and
+  routines, led by Kora the Chief, for work that isn't a code repository.
 - **Local.** No Kora account and no analytics. Your code and chats stay on your Mac. Your agents talk to their own
   model providers, as they do without Kora.
 
@@ -63,5 +65,5 @@ drag Kora from Applications to the Trash.
 
 ---
 
-This repository holds Kora's releases, update feed and issue tracker; Kora's source code isn't public. The open-source
+This repository holds Kora's releases, update feed and issue tracker; Kora is proprietary software and its source code isn't public. Use of Kora is governed by the [End-User Licence Agreement](EULA.md); © 2026 Koragraph, all rights reserved. The open-source
 software it includes is listed, with its licenses, inside the app (`Kora.app/Contents/Resources/THIRD_PARTY_NOTICES.md`).
