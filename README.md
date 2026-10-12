@@ -20,14 +20,13 @@
 ## What it does
 
 - **Chat with your coding agents, per project.** Claude Code (and Codex) in a desktop app, one thread per task.
-- **Code graph.** Kora indexes your repository on your Mac and hands agents the exact functions and callers they
-  need, so they spend less time (and fewer tokens) searching.
+- **Code graph.** Click to index a repository and Kora maps it on your Mac, then hands agents the exact functions and
+  callers they need, so they spend less time (and fewer tokens) searching. Nothing is indexed until you ask.
 - **Swarm.** Claude leads; cheaper worker agents do the gathering, editing and checking in their own worktrees. Each
   worker runs in a live pane you can watch and steer.
-- **Kora blobs.** A second surface (Kora | Code switcher): persistent assistants with their own folder, memory and
-  routines, led by Kora the Chief, for work that isn't a code repository.
 - **Local.** No Kora account and no analytics. Your code and chats stay on your Mac. Your agents talk to their own
   model providers, as they do without Kora.
+- **Coming soon: Kora.** A team of assistants that live on your Mac, each with its own memory, routines and browser.
 
 ## Install
 
