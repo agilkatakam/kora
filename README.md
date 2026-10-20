@@ -2,67 +2,53 @@
   <img src="assets/kora-icon.png" width="112" height="112" alt="Kora">
 </p>
 
-<h1 align="center">Kora</h1>
+# Kora
 
-<p align="center">
-  A Mac app for coding with Claude Code: a local code graph keeps your agents' context small,<br>
-  and a swarm of worker agents takes the legwork off your main agent.
-</p>
+A Mac app for coding agents: Claude Code, Codex, OpenCode and Antigravity, with a local code graph that keeps their context small and a swarm of workers that takes the legwork off your main agent.
 
-<p align="center">
-  <a href="https://github.com/agilkatakam/kora/releases/latest/download/Kora-arm64.dmg"><b>Download for Mac</b></a>
-  &nbsp;·&nbsp; Apple Silicon &nbsp;·&nbsp; macOS 13.5 or later
-  &nbsp;·&nbsp; <a href="https://github.com/agilkatakam/kora/releases">All releases</a>
-</p>
-
----
+**[Download Kora for Mac](https://github.com/agilkatakam/kora/releases/latest/download/Kora-arm64.dmg)** · Apple Silicon · macOS 13.5 or later · at least one of the four agents · [All releases](https://github.com/agilkatakam/kora/releases)
 
 ## What it does
 
-- **Chat with your coding agents, per project.** Claude Code (and Codex) in a desktop app, one thread per task.
-- **Code graph.** Click to index a repository and Kora maps it on your Mac, then hands agents the exact functions and
-  callers they need, so they spend less time (and fewer tokens) searching. Nothing is indexed until you ask.
-- **Swarm.** Claude leads; cheaper worker agents do the gathering, editing and checking in their own worktrees. Each
-  worker runs in a live pane you can watch and steer.
-- **Local.** No Kora account and no analytics. Your code and chats stay on your Mac. Your agents talk to their own
-  model providers, as they do without Kora.
-- **Coming soon: Kora.** A team of assistants that live on your Mac, each with its own memory, routines and browser.
+- **Chat with your coding agents, per project.** Claude Code, Codex, OpenCode and Antigravity, side by side in one app.
+- **Code graph.** Click to index a project (nothing is indexed until you ask). Your agents look code up in a local map instead of re-reading files: fewer tokens, faster answers.
+- **Swarm.** Claude, Codex or OpenCode leads. Cheaper workers do the legwork in their own git worktrees, in live panes you can watch and steer. You approve every worker.
+- **Plan mode.** Each agent plans in its own native mode, with the graph behind it.
+- **"Kora saved you $X".** A meter of what the graph and routing saved, estimated at each model's own API list price (Claude at Anthropic's, GPT at OpenAI's, Gemini at Google's) and refreshed automatically for new models. It is an estimate, not a bill.
+- **Your plans in one place.** Usage of your Claude, Codex and Antigravity plans, side by side.
+- **Local.** No Kora account, no analytics. See [Privacy](#privacy).
+- **Coming soon: Kora**, a team of assistants with memory, routines and a browser.
 
 ## Install
 
-1. [Download Kora](https://github.com/agilkatakam/kora/releases/latest/download/Kora-arm64.dmg) and open the disk
-   image.
-2. Drag **Kora** onto **Applications**, then open it from Applications.
-3. On Kora's first screen, choose **Log in to Claude**. It signs you in through your browser with your Claude plan;
-   no Terminal needed. Then open a project folder and ask your first question.
+1. Download **Kora-arm64.dmg** from the [latest release](https://github.com/agilkatakam/kora/releases/latest).
+2. Open it and drag Kora to Applications. It is signed and notarized, so it opens like any Mac app.
+3. Open Kora and sign in to any of the agents you use. Claude has a one-click login on the first screen; the others use their own (`codex login`, `opencode auth login`, install `agy` for Antigravity), and the first screen lists them. One working agent is enough.
 
-Kora is signed with an Apple Developer ID and notarized by Apple, so it opens like any other Mac app.
+## Privacy
+
+Kora has no account and no analytics or telemetry. Your code, chats and the code graph stay on your Mac. Your agents talk to their own providers exactly as they would without Kora.
+
+The network calls Kora itself makes:
+
+- the update check, against this repository's releases;
+- the public model price list ([models.dev](https://models.dev)), at most once a day, so the savings meter knows each model's price;
+- for Swarm, the list of free worker models (models.dev and OpenCode Zen's public model list).
+
+None of them carries anything about you, your code or your chats.
 
 ## Updates
 
-Kora updates itself. It checks for a new version about once an hour and downloads it in the background. When it's
-ready, a **Restart to update** button appears at the bottom of the sidebar; quitting Kora installs it as well. You can
-also check by hand in **Settings → About** or **Kora → Check for Updates…**. What changed in each version is on the
-[releases page](https://github.com/agilkatakam/kora/releases).
+Kora checks for updates hourly and downloads them in the background. When one is ready, **Restart to update** appears at the bottom of the sidebar. You can also check by hand from **Settings → About** or **Kora → Check for Updates…**.
 
 ## Report a bug
 
-In Kora, choose **Help → Report a Bug…**. It opens the
-[bug form](https://github.com/agilkatakam/kora/issues/new?template=bug_report.yml) with your Kora version and Mac
-already filled in.
-
-- Logs help a lot: **Help → Show Logs in Finder** selects `server.log`, which you can drag into the form. Skim it
-  first and remove anything private.
-- Ideas and wishes go in a [feature request](https://github.com/agilkatakam/kora/issues/new?template=feature_request.yml).
-- Questions and tips go in [Discussions](https://github.com/agilkatakam/kora/discussions).
-- Security problems: report them privately, as described in [SECURITY.md](SECURITY.md).
+**Help → Report a Bug…** opens the [bug form](https://github.com/agilkatakam/kora/issues/new?template=bug_report.yml). **Help → Show Logs in Finder** reveals `server.log`; skim it for anything private before you attach it. For a feature request use the [feature form](https://github.com/agilkatakam/kora/issues/new?template=feature_request.yml), or start a thread in [Discussions](https://github.com/agilkatakam/kora/discussions). Security issues: see [SECURITY.md](SECURITY.md).
 
 ## Uninstall
 
-Quit Kora, then in Terminal run `kora uninstall` (add `--purge` to also delete your chats, settings and code graph). Then
-drag Kora from Applications to the Trash.
+Quit Kora, run `kora uninstall` in Terminal (add `--purge` to also delete your chats, settings and code graph), then drag Kora from Applications to the Trash.
 
 ---
 
-This repository holds Kora's releases, update feed and issue tracker; Kora is proprietary software and its source code isn't public. Use of Kora is governed by the [End-User Licence Agreement](EULA.md); © 2026 Akhil Katakam (Kora), all rights reserved. The open-source
-software it includes is listed, with its licenses, inside the app (`Kora.app/Contents/Resources/THIRD_PARTY_NOTICES.md`).
+This repository holds Kora's releases, the update feed and issues. Kora is proprietary software; see [EULA.md](EULA.md). © 2026 Akhil Katakam (Kora). Open-source notices are in `Kora.app/Contents/Resources/THIRD_PARTY_NOTICES.md`.
