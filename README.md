@@ -51,4 +51,4 @@ Quit Kora, run `kora uninstall` in Terminal (add `--purge` to also delete your c
 
 ---
 
-This repository holds Kora's releases, the update feed and issues. Kora is proprietary software; see [EULA.md](EULA.md). © 2026 Akhil Katakam (Kora). Open-source notices are in `Kora.app/Contents/Resources/THIRD_PARTY_NOTICES.md`.
+This repository holds Kora's releases, the update feed and issues. Kora is open source under the MIT licence: the source is at [Koragraph/Kora](https://github.com/Koragraph/Kora). © 2026 Akhil Katakam and the Kora contributors. Open-source notices are in `Kora.app/Contents/Resources/THIRD_PARTY_NOTICES.md`.
